@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+.puppy-container {
+    text-align: center;
+}
+
+.puppy-image {
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#petButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffca28;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#petButton:hover {
+    background-color: #ffc107;
+}
+
+.wiggle {
+    animation: wiggle 0.3s ease;
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
